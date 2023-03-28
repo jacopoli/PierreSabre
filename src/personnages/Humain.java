@@ -13,7 +13,7 @@ public class Humain {
 	}
 
 
-	public int getArgent() {
+	protected int getArgent() {
 		return argent;
 	}
 	
@@ -26,6 +26,10 @@ public class Humain {
 	public void gagnerArgent(int gain) {
 		assert gain>0;
 		argent=argent+gain;
+	}
+	
+	protected void setArgent(int argent) {
+		this.argent=argent;
 	}
 	
 	public void perdreArgent(int perte) {
